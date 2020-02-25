@@ -1,3 +1,5 @@
+import 'package:busca_github/component/LabelText.dart';
+import 'package:busca_github/screen/ConfigScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -9,15 +11,20 @@ class AppBarTela extends StatelessWidget {
     return AppBar(
       elevation: 0.0,
       backgroundColor: Colors.green,
+      leading: Icon(Icons.android),
+      title: LabelText(
+        texto: "Busca repositorios Github",
+        estilo: TextStyle(
+          backgroundColor: Colors.transparent,
+          fontSize: 16
+        ),
+      ),
       actions: <Widget>[
         IconButton(
-          icon: Icon(Icons.android),
-          onPressed: (){
-          },
-        ),
-        IconButton(
           icon: Icon(Icons.account_circle),
-          onPressed: (){},
+          onPressed: (){
+            Navigator.push(context,ConfigScreen());
+          },
         )
       ],
     );

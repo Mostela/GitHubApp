@@ -1,3 +1,4 @@
+import 'package:busca_github/screen/SeachScreen.dart';
 import 'package:busca_github/screen/UserScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -7,13 +8,13 @@ class TabsBar extends StatelessWidget{
 
 
     final _kTabPages = <Widget>[
-      Center(child: UserScreen()),
-      Center(child: Icon(Icons.search))
+      Center(child: SeachScreen()),
+      Center(child: UserScreen())
     ];
 
     final _kTabs = <Tab>[
-      Tab(icon: Icon(Icons.account_circle)),
-      Tab(icon: Icon(Icons.build))
+      Tab(icon: Icon(Icons.adb)),
+      Tab(icon: Icon(Icons.account_box))
     ];
 
     return DefaultTabController(
