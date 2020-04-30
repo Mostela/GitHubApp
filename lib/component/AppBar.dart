@@ -12,13 +12,10 @@ class AppBarTela extends StatelessWidget {
       elevation: 0.0,
       backgroundColor: Colors.green,
       leading: Icon(Icons.android),
-      title: LabelText(
-        texto: "Busca repositorios Github",
-        estilo: TextStyle(
+      title: Text("Busca Github", style: TextStyle(
           backgroundColor: Colors.transparent,
           fontSize: 16
-        ),
-      ),
+      ),),
       actions: <Widget>[
         IconButton(
           icon: Icon(Icons.account_circle),

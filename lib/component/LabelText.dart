@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
-class LabelText extends StatelessWidget {
+class LabelText extends StatefulWidget{
+  final String texto;
+  final TextStyle estilo;
+
   LabelText ({Key key, this.texto, this.estilo}) : super(key: key);
-  String texto;
-  TextStyle estilo;
 
+  @override
+  _LabelText createState() => _LabelText();
+}
 
+class _LabelText extends State<LabelText> {
   @override
   Widget build(BuildContext context) {
     return Text(
-      this.texto,
+      widget.texto,
       textAlign: TextAlign.center,
-      style: this.estilo
+      style: widget.estilo
     );
   }
 }

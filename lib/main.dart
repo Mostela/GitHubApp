@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
 
     ]);
     return MaterialApp(
-      title: 'Github Busca',
+      title: 'Busca Github',
       theme: ThemeData(
         primarySwatch: Colors.green,
         secondaryHeaderColor: Colors.white,
