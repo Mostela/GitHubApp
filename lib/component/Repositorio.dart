@@ -58,10 +58,10 @@ class _Repositorio extends State<Repositorio>{
         children: <Widget>[
           Container(
             child: Card(
-              child: Image.network(widget.imageLink, width: 90, scale: 1),
+              /*child: Image.network(widget.imageLink, width: 90, scale: 1),
               shape: BeveledRectangleBorder(
                 borderRadius: BorderRadius.circular(50)
-              ),
+              ),*/
             ),
           ),
           Column(
